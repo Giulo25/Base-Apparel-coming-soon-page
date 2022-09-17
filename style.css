@@ -1,0 +1,230 @@
+:root {
+    --red-desaturated:#ce9797;
+    --red-soft:#f96262;
+    --red-dark:#413a3a;
+    --gradient-light: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient-normal: linear-gradient(135deg, #F8BFBF, #EE8B8B);
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.coming-soon {
+    display: grid;
+    grid-template-columns: 160fr 140fr;
+    grid-template-rows: 10rem 70rem;
+    grid-template-areas:
+    "logo img"
+    "text img";
+    width: 144rem;
+}
+.bg-pattern {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background: url(images/bg-pattern-desktop.svg) left center / cover no-repeat;
+}
+.logo-container {
+    grid-area: logo;
+    align-self: end;
+    width: 45rem;
+    justify-self: center;
+    padding-left: 2rem;
+}
+.text-container {
+    grid-area: text;
+    align-self: center;
+    justify-self: center;
+    padding-inline: 2rem;
+    max-width: 45rem;
+}
+.text-container h1 {
+    font-size: 6.4rem;
+    text-transform: uppercase;
+    color: var(--red-dark);
+    line-height: 1.1;
+    letter-spacing: 17px;
+    margin-bottom: 3.2rem;
+}
+.text-container span {
+    font-weight: 300;
+    color: var(--red-desaturated);
+}
+.text-container p {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--red-desaturated);
+    margin-bottom: 4rem;
+}
+.coming-soon__image {
+    grid-area: img;
+    background: url(images/hero-desktop.jpg) top center / cover no-repeat;
+    overflow: hidden;
+}
+.form-container {
+    box-shadow: inset 0 0 0 1px var(--red-desaturated); 
+    border-radius: 5rem;
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem 8.5rem;
+    padding-block: 1.6rem;
+}
+.submit {
+    background: url(images/icon-arrow.svg) center center no-repeat,
+    var(--gradient-normal);
+    width: 10rem;
+    height: 5.6rem;
+    border-radius: 5rem;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    right: -3rem;
+    top: 0;
+    box-shadow: 0 15px 20px rgba(0,0,0,.15);
+}
+.submit:active {
+    scale: 0.95;
+    box-shadow: 0 10px 15px rgba(0,0,0,.18);
+}
+.email, .email:focus {
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: var(--red-desaturated);
+    background-color: transparent;
+}
+.error .form-container {
+    box-shadow: inset 0 0 0 2px var(--red-soft); 
+}
+/* .valid .form-message {
+    visibility: visible;
+} */
+/* .form-message {
+    visibility: hidden;
+} */
+
+/* error state */
+/* .error .form-message {
+    visibility: visible;
+    padding-left: 1.8rem;
+    color: var(--red-soft);
+} */
+.form-message {
+    visibility: visible;
+    height: 3rem;
+    padding-left: 1.8rem;
+    color: var(--red-soft);
+}
+.error-icon {
+    visibility: hidden;
+}
+.error .error-icon {
+    visibility: visible;
+}
+.error .form-container {
+    padding-block: 1.6rem;
+}
+
+
+@media (max-width: 63em) {
+    main {
+        padding: 0;
+    }
+    .coming-soon {
+        grid-template-columns: 155fr 145fr;
+    }
+    .logo-container {
+        width: 100%;
+        padding-inline: 3.2rem;
+    }
+    .text-container h1 {
+        font-size: 5.4rem;
+        line-height: 1.1;
+        letter-spacing: 15px;
+        margin-bottom: 2.4rem;
+    }
+    .text-container {
+        padding-inline: 2rem;
+    }
+    .logo-container {
+        padding-inline: 2rem;
+    }
+}
+
+/* mobile  */
+@media (max-width: 50em) {
+    main {
+        align-items: flex-start;
+    }
+    .coming-soon {
+        grid-template-columns: 1fr;
+        grid-template-rows: 8.4rem 25rem auto;
+        grid-template-areas:
+        "logo"
+        "img"
+        "text";
+        max-width: 50rem;
+        background: var(--gradient-light);
+    }
+    .logo-container {
+        align-self: center;
+        justify-self: start;
+        padding-inline: 0;
+        padding-left: 3.2rem;
+    }
+    .logo {
+        height: 2rem;
+        width: 10rem;
+    }
+    .coming-soon__image {
+        background: url(images/hero-mobile.jpg) top center /cover no-repeat;
+    }
+    .bg-pattern {
+        background: none;
+    }
+    .text-container {
+        text-align: center;
+        margin-top: 6.4rem;
+        padding-inline: 3.2rem;
+    }
+    .text-container h1 {
+        font-size: 4rem;
+        line-height: 1.05;
+        letter-spacing: 11px;
+        margin-bottom: 2.4rem;
+    }
+    .text-container p {
+        font-size: 1.4rem;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .submit {
+        width: 6.4rem;
+        right: 0;
+    }
+    .form-message {
+        text-align: left;
+    }
+    .error .form-message {
+        color: var(--red-soft);
+    }
+    
+}
