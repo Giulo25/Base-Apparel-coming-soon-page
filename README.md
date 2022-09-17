@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/Giulo25/Base-Apparel-coming-soon-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://giulo25.github.io/Base-Apparel-coming-soon-page/)
 
 ## Built with
 
