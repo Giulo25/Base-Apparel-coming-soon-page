@@ -24,6 +24,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    background-color: red;
 }
 .coming-soon {
     display: grid;
