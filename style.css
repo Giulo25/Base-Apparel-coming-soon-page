@@ -131,9 +131,7 @@ main {
 
 
 @media (max-width: 63em) {
-    main {
-        padding: 0;
-    }
+    
     .coming-soon {
         grid-template-columns: 155fr 145fr;
     }
@@ -158,6 +156,7 @@ main {
 @media (max-width: 50em) {
     main {
         align-items: flex-start;
+        padding: 0;
     }
     .coming-soon {
         grid-template-columns: 1fr;
