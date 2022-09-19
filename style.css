@@ -113,19 +113,6 @@ main {
 .error .form-container {
     box-shadow: inset 0 0 0 2px var(--red-soft); 
 }
-/* .valid .form-message {
-    visibility: visible;
-} */
-/* .form-message {
-    visibility: hidden;
-} */
-
-/* error state */
-/* .error .form-message {
-    visibility: visible;
-    padding-left: 1.8rem;
-    color: var(--red-soft);
-} */
 .form-message {
     visibility: visible;
     height: 3rem;
@@ -151,7 +138,6 @@ main {
         grid-template-columns: 155fr 145fr;
     }
     .logo-container {
-        width: 100%;
         padding-inline: 3.2rem;
     }
     .text-container h1 {
