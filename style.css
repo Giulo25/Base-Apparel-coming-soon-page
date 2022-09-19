@@ -180,7 +180,7 @@ main {
         width: 10rem;
     }
     .coming-soon__image {
-        background: url(images/hero-mobile.jpg) top center /cover no-repeat;
+        background: url(images/hero-mobile.jpg) top center / 35.7rem no-repeat;
     }
     .bg-pattern {
         background: none;
