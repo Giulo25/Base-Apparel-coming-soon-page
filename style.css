@@ -138,7 +138,6 @@ main {
         grid-template-columns: 155fr 145fr;
     }
     .logo-container {
-        width: 100%;
         padding-inline: 3.2rem;
     }
     .text-container h1 {
@@ -175,6 +174,7 @@ main {
         justify-self: start;
         padding-inline: 0;
         padding-left: 3.2rem;
+        width: 100%;
     }
     .logo {
         height: 2rem;
