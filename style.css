@@ -137,14 +137,18 @@ main {
     .coming-soon {
         grid-template-columns: 155fr 145fr;
     }
-    .text-container {
-        padding-inline: 2rem;
+    .logo-container {
+        width: 100%;
+        padding-inline: 3.2rem;
     }
     .text-container h1 {
         font-size: 5.4rem;
         line-height: 1.1;
         letter-spacing: 15px;
         margin-bottom: 2.4rem;
+    }
+    .text-container {
+        padding-inline: 2rem;
     }
     .logo-container {
         padding-inline: 2rem;
