@@ -33,6 +33,7 @@ main {
     "logo img"
     "text img";
     width: 144rem;
+    overflow: hidden;
 }
 .bg-pattern {
     grid-column: 1/2;
