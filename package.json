@@ -1,0 +1,12 @@
+{
+	"name": "File per attivare script live-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"devserver": "live-server --browser=firefox"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
